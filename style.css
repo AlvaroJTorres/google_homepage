@@ -1,0 +1,12 @@
+.image {
+    padding: 100px;
+    margin: auto;
+    text-align: center;
+}
+
+.search_bar {
+    text-align: center;
+    border-radius: 20px;
+    height: 30px;
+    flex: 100%;
+}
