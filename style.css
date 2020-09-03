@@ -1,12 +1,162 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    display: inline;
+    vertical-align: middle;
+}
+
+.topbar {
+    width: 100%;
+    font-size: 13px;
+}
+
+.topright_icons {
+    padding-right: 21px;
+    float: right;
+    padding-top: 6px;
+}
+
+.li_topright {
+    padding-left: 15px;
+}
+
+#apps_picture {
+    width: 25px;
+}
+
+#user_icon {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    background-color: #4387fd;
+    padding: 0.5em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 109px;
+}
+
 .image {
-    padding: 100px;
     margin: auto;
     text-align: center;
 }
 
 .search_bar {
-    text-align: center;
-    border-radius: 20px;
-    height: 30px;
-    flex: 100%;
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+}
+
+.search_icon {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    opacity: 0.6;
+    top: 15px;
+    left: 17px;
+}
+
+.search_input {
+    width: 487px;
+    font-size: 16px;
+    line-height: 34px;
+    padding: 5px 48px;
+    border: 1px solid #dfe1e5;
+    border-radius: 25px;
+    margin-bottom: 12px; 
+}
+
+.search_input:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+}
+
+button {
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    outline: none;
+    background-color: #f2f2f2;
+    color: #6a6e72;
+    font-size: 14px;
+    line-height: 27px;
+    padding: 3px 16px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+}
+
+.languages {
+    margin-top: 1em;
+}
+
+.languages_list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center; 
+}
+
+.languages a {
+    color: blue;
+}
+
+.languages_list li {
+    margin: 0 0.3em;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    position: fixed;
+}
+
+.location {
+    padding: 0.7em;
+    border: 1px solid #dfe1e5;
+    background-color: #f2f2f2;
+}
+
+.options {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0.7em;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+}
+
+.options ul {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.options ul li {
+    margin: 0 0.3em;
 }
